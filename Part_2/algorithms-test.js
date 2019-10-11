@@ -1,17 +1,8 @@
-// const sumOf = function(list) {
-//     // Base case
-//     if (list.length === 1) {
-//         return list[0];
-//     }
-//     // General case
-//     return list[0] + sumOf(list.slice(1));
 
-// }
-
-// let lst = [2,4,6,8,10];
-// console.log(sumOf(lst));
 
 // QUESTION 1 //
+
+//Linear time
 
 function sheepJump(num) {
   if (num == 0) {
@@ -22,9 +13,10 @@ function sheepJump(num) {
   return sheepJump(num - 1);
 }
 
-// sheepJump(3)
+sheepJump(3)
 
 // QUESTION 2 //
+//Linear Time
 
 function powerCalculator(base, exp) {
   if (exp < 0) {
@@ -40,6 +32,7 @@ function powerCalculator(base, exp) {
 // console.log(powerCalculator(10, 0));
 
 // QUESTION 3 //
+
 
 function reverseString(input, num = input.length) {
   if (num == 0) {
@@ -103,6 +96,7 @@ function fibo(num, array = [1, 1]) {
 // console.log(fibo(0));
 
 // QUESTION 7 //
+//Linear
 function factorial(n) {
   if(n <= 1) {
     return n
